@@ -37,10 +37,15 @@ const AppPage = () => {
   const [feedbackText, setFeedbackText] = useState("");
   const { isLoading, modules } = useGetStartedModules();
   return (
-    <Container maxW={"container.2xl"} paddingX={{ base: "2", lg: "4" }}>
+    <Container
+      maxW={"container.2xl"}
+      paddingX={{ base: "2", lg: "4" }}
+      paddingBottom={{ base: "8", lg: "12" }}
+    >
       <Box
         paddingX={{ base: "6", lg: "16" }}
         paddingTop={{ base: "4", lg: "12" }}
+        paddingBottom={{ base: "6", lg: "12" }}
         background={"gray.50"}
         borderRadius={4}
         overflow={"hidden"}
@@ -64,7 +69,7 @@ const AppPage = () => {
               const { uuid, Component } = module;
 
               return (
-                <GridItem key={uuid} w="100%" h={"100%"}>
+                <GridItem key={uuid} w="100%">
                   {isLoading ? (
                     <Box
                       minHeight={"350px"}

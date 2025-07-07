@@ -126,6 +126,7 @@ CREATE TABLE "account" (
     "scope" TEXT,
     "id_token" TEXT,
     "session_state" TEXT,
+    "ext_expires_in" INTEGER,
 
     CONSTRAINT "account_pkey" PRIMARY KEY ("id")
 );
